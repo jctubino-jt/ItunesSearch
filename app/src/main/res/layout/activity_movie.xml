@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <LinearLayout
+            android:id="@+id/search_results_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:background="@color/default_background">
+
+            <ImageView
+                android:id="@+id/ivArtworkUrl100Detail"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:adjustViewBounds="true"
+                tools:scaleType="centerCrop"
+                android:src="@drawable/ic_launcher_background"
+                />
+
+            <TextView
+                android:id="@+id/tvTrackNameDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:paddingTop="@dimen/details_padding"
+                android:paddingLeft="@dimen/details_padding"
+                android:textColor="@color/colorYellow"
+                android:textSize="@dimen/movie_title_text_size_detail"
+                android:textStyle="bold"
+                tools:text="@string/title"
+                />
+
+        <TextView
+            android:id="@+id/tvPrimaryGenreNameDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/details_padding"
+            android:paddingTop="@dimen/larger_padding"
+            android:textColor="@color/common_text"
+            android:textSize="@dimen/movie_genre_text_size_detail"
+            tools:text="@string/title" />
+
+        <TextView
+            android:id="@+id/tvLabelSynopsis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/details_padding"
+            android:paddingTop="@dimen/details_padding"
+            android:paddingBottom="@dimen/larger_padding"
+            android:textColor="@color/colorGreen"
+            android:textSize="@dimen/header_label_text_size_detail"
+            android:textStyle="bold"
+            tools:text="Synopsis" />
+
+        <TextView
+            android:id="@+id/tvLongDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/details_padding"
+            android:paddingTop="@dimen/details_padding"
+            android:paddingBottom="@dimen/larger_padding"
+            android:textColor="@color/common_text"
+            android:textSize="@dimen/synopsis_content"
+            android:textStyle="bold"
+            tools:text="Synopsis" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
